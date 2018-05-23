@@ -1,0 +1,25 @@
+Como utilizar el algoritmo de forma eficiente
+
+------ Macros ---------
+
+En el archivo creador_macros.sh se modifica el ciclo for -> 'seq inicio fin' de modo de dejar los macros que a uno le interesen
+
+*IMPORTANTE* el archivo matrix.txt y neutron.mac deben estar en el mismo lugar donde se corre el programa creador_macros.sh
+En neutron.mac se edita antes de iniciar el programa distancia de la fuente, distribucion de direccion, y cantidad de particulas.
+*No se debe tocar ni la distribucion de energia, ni los valores de las geometrias*
+
+Este programa creara automaticamente una carpta "macro/" donde guardara los macros
+
+------ Geant4 ---------
+
+Luego (asumiendo que se compilo geant4) en el lugar donde se encuentra el ejecutable se debe iniciar el scrip Correr_Geant4.sh
+En este se puede edita el ciclo for al igual que antes -> 'seq inicio fin'
+
+*IMPORTANTE* El programa asume que la carpeta macro/ se encuentra un nivel "arriba" en el arbol respecto a la carpeta build/
+-> #@Simulaciones/ ls
+	macro/  build/  etcetera/
+
+En caso de querer cambiar el path, este se encuentra en el archivo iterar_energias.sh
+
+*Atencion* El codigo de geant4 tiene por defecto trabajar con 4 nucleos siempre y cuando le este permitido
+*Atencion* En caso de querer iniciar geant4 usando multi-trabajos se debe comentar el ultimo comando 'mv' y descomentar el comando 'hadd' en el archivo iterar_energias.sh

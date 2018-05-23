@@ -1,0 +1,83 @@
+/run/verbose 1
+/run/initialize 
+#/control/verbose 2
+#/tracking/verbose 0
+/tracking/storeTrajectory 2
+
+/gps/verbose 0
+
+
+/gps/particle neutron
+/gps/pos/centre 0 8 0 cm
+/gps/ang/type iso
+/gps/ang/mintheta 25 deg
+/gps/ang/maxtheta 155 deg
+/gps/ang/minphi 72 deg
+/gps/ang/maxphi 108 deg
+
+# energy distribution
+
+/gps/ene/type User
+/gps/hist/type energy
+/gps/ene/diffspec 1 
+
+#/gps/ene/emspec 0
+
+
+/gps/hist/point 4.14e-7	1.44e-2
+/gps/hist/point 1.10e-1	3.34e-2
+/gps/hist/point 3.3e-1	3.13e-2
+/gps/hist/point 5.4e-1	2.81e-2
+/gps/hist/point 7.5e-1	2.5e-2
+/gps/hist/point 9.7e-1	2.12e-2
+/gps/hist/point 1.18	1.98e-2
+/gps/hist/point 1.4	1.75e-2
+/gps/hist/point 1.61	1.92e-2
+/gps/hist/point 1.82	2.23e-2
+/gps/hist/point 2.04	2.15e-2
+/gps/hist/point 2.25	2.25e-2
+/gps/hist/point 2.47	2.28e-2
+/gps/hist/point 2.68	2.95e-2
+/gps/hist/point 2.9	3.56e-2
+/gps/hist/point 3.11	3.69e-2
+/gps/hist/point 3.32	3.46e-2
+/gps/hist/point 3.54	3.07e-2
+/gps/hist/point 3.75	3e-2
+/gps/hist/point 3.97	2.69e-2
+/gps/hist/point 4.18	2.86e-2
+/gps/hist/point 4.39	3.18e-2
+/gps/hist/point 4.61	3.07e-2
+/gps/hist/point 4.82	3.33e-2
+/gps/hist/point 5.04	3.04e-2
+/gps/hist/point 5.25	2.74e-2
+/gps/hist/point 5.47	2.33e-2
+/gps/hist/point 5.68	2.06e-2
+/gps/hist/point 5.89	1.82e-2
+/gps/hist/point 6.11	1.77e-2
+/gps/hist/point 6.32	2.04e-2
+/gps/hist/point 6.54	1.83e-2
+/gps/hist/point 6.75	1.63e-2
+/gps/hist/point 6.96	1.68e-2
+/gps/hist/point 7.18	1.68e-2
+/gps/hist/point 7.39	1.88e-2
+/gps/hist/point 7.61	1.84e-2
+/gps/hist/point 7.82	1.69e-2
+/gps/hist/point 8.03	1.44e-2
+/gps/hist/point 8.25	9.68e-3
+/gps/hist/point 8.46	6.52e-3
+/gps/hist/point 8.68	4.26e-3
+/gps/hist/point 8.89	3.67e-3
+/gps/hist/point 9.11	3.81e-3
+/gps/hist/point 9.32	5.06e-3
+/gps/hist/point 9.53	6.25e-3
+/gps/hist/point 9.75	5.52e-3
+/gps/hist/point 9.96	4.68e-3
+/gps/hist/point 1.02e1	3.7e-3
+/gps/hist/point 1.04e1	2.78e-3
+/gps/hist/point 1.06e1	1.51e-3
+/gps/hist/point 1.08e1	3.63e-4
+/gps/hist/point 1.10e1	0
+
+
+#/gps/energy 2.3 MeV
+/run/beamOn 100000

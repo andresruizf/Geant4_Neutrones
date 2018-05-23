@@ -1,0 +1,1 @@
+key760 BF3Gas 50.6 218 Aluminium 1.0 Air 1e-8 Air 100 Polyethylene_TS 42.5 Boron_Polyethylene_TS 25 Cadmium 1.1

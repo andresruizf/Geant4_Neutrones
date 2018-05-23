@@ -1,0 +1,79 @@
+/run/verbose 1
+/run/initialize 
+#/control/verbose 2
+#/tracking/verbose 0
+/tracking/storeTrajectory 2
+
+# cambia el material del detector (BF3Gas, Helium3Gas)
+/shield/sample/setSampleDetMat	Helium3Gas
+
+# cambia el diametro del detector
+/shield/sample/Diametro_Det	63.8 mm
+
+
+#Cambia largo del detector
+/shield/sample/sampleThickness	375 mm
+
+# cambia el material del Aluminio (Aluminium)
+/shield/sample/setSampleMatAl Aluminium
+
+# cambia el diametro de lamina de ALuminio
+/shield/sample/Diametro_Al	1 mm
+
+# cambia el material de la lamina de (Aluminium,Air)
+/shield/sample/setSampleMatCad Cadmium
+
+# cambia el diametro de lamina de Cadmio
+/shield/sample/Diametro_Cad	1.1 mm
+
+# cambia el material moderador del Core (Polyethylene_TS, Boron_Polyethylene_TS,Air)
+/shield/sample/setSampleMatCore Air
+
+#Cambia el Espesor del Core  en X
+/shield/sample/sampleThicknessX_Core	100 mm 
+
+#Cambia el Espesor del Core  en Y
+/shield/sample/sampleThicknessY_Core	100 mm
+
+#Cambia el Espesor del Core  en Z
+/shield/sample/sampleThicknessZ_Core	375 mm #ya esta dado por defecto
+
+# cambia el material moderador de la Primera Capa (Polyethylene_TS, Boron_Polyethylene_TS,Cadmium,Air,Vacuum)
+/shield/sample/setSampleMatC1	Air
+
+
+#Cambia el Espesor del material moderador 1 en X
+/shield/sample/sampleThicknessX	12.7 mm
+
+
+#Cambia el Espesor del material moderador 1 en Y
+/shield/sample/sampleThicknessY	12.7 mm
+
+#Cambia el Espesor del material moderador 1 en Z
+/shield/sample/sampleThicknessZ	375 mm 	 #ya esta dado por defecto
+
+# cambia el material moderador de la Segunda Capa (Polyethylene_TS, Boron_Polyethylene_TS,Cadmium,Air,Vacuum)
+/shield/sample/setSampleMatC2	Air
+
+#Cambia el Espesor del material moderador 2 en X
+/shield/sample/sampleThicknessX_2	25 mm
+
+
+#Cambia el Espesor del material moderador 2 en Y
+/shield/sample/sampleThicknessY_2	25 mm
+	
+#Cambia el Espesor del material moderador 2 en Z
+/shield/sample/sampleThicknessZ_2	375 mm	 #ya esta dado por defecto
+
+
+# cambia el material moderador de la Tercera Capa (Polyethylene_TS, Boron_Polyethylene_TS,Cadmium,Air,Vacuum)
+/shield/sample/setSampleMatC3	Air
+
+#Cambia el Espesor del material moderador 3 en X
+/shield/sample/sampleThicknessX_3	42.5 mm 
+
+#Cambia el Espesor del material moderador 3 en Y
+/shield/sample/sampleThicknessY_3	42.5 mm
+
+#Cambia el Espesor del material moderador 3 en Z
+/shield/sample/sampleThicknessZ_3	375 mm 	#ya esta dado por defecto

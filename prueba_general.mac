@@ -1,0 +1,96 @@
+/run/verbose 1
+/run/initialize 
+#/control/verbose 2
+#/tracking/verbose 0
+/tracking/storeTrajectory 2
+
+# cambia el material del detector (BF3Gas, He3Gas)
+/shield/sample/setSampleDetMat He3Gas
+
+# cambia el radio del detector
+/shield/sample/Diametro_Det 63.8 mm
+
+#Cambia largo del detector
+/shield/sample/sampleThickness 40 cm
+
+# cambia el material del Aluminio (Aluminium)
+/shield/sample/setSampleMatAl Aluminium
+
+# cambia el radio de lamina de ALuminio
+/shield/sample/Diametro_Al 1.0 mm
+
+# cambia el material de la lamina de (Aluminium,Air)
+/shield/sample/setSampleMatCad Cadmium
+
+# cambia el radio de lamina de Cadmio
+/shield/sample/Diametro_Cad 1.1 mm
+
+# cambia el material moderador del Core (Polyethylene_TS, Boron_Polyethylene_TS,Air)
+/shield/sample/setSampleMatCore Air
+
+#Cambia el Espesor del Core  en X
+/shield/sample/sampleThicknessX_Core 100 mm
+
+#Cambia el Espesor del Core  en Y
+/shield/sample/sampleThicknessY_Core 100 mm
+
+#Cambia el Espesor del Core  en Z
+/shield/sample/sampleThicknessZ_Core 63.8 mm
+
+# cambia el material moderador de la Primera Capa (Polyethylene_TS, Boron_Polyethylene_TS,Cadmium,Air,Vacuum)
+/shield/sample/setSampleMatC1 Air
+
+
+#Cambia el Espesor del material moderador 1 en X
+/shield/sample/sampleThicknessX 1.1 mm
+
+#Cambia el Espesor del material moderador 1 en Y
+/shield/sample/sampleThicknessY 1.1 mm
+
+#Cambia el Espesor del material moderador 1 en Z
+/shield/sample/sampleThicknessZ 63.8 mm
+
+# cambia el material moderador de la Segunda Capa (Polyethylene_TS, Boron_Polyethylene_TS,Cadmium,Air,Vacuum)
+/shield/sample/setSampleMatC2 Polyethylene_TS
+
+#Cambia el Espesor del material moderador 2 en X
+/shield/sample/sampleThicknessX_2 25 mm
+
+#Cambia el Espesor del material moderador 2 en Y
+/shield/sample/sampleThicknessY_2 25 mm
+
+#Cambia el Espesor del material moderador 2 en Z
+/shield/sample/sampleThicknessZ_2 63.8 mm
+
+
+# cambia el material moderador de la Tercera Capa (Polyethylene_TS, Boron_Polyethylene_TS,Cadmium,Air,Vacuum)
+/shield/sample/setSampleMatC3 Boron_Polyethylene_TS
+
+#Cambia el Espesor del material moderador 3 en X
+/shield/sample/sampleThicknessX_3 25 mm
+
+#Cambia el Espesor del material moderador 3 en Y
+/shield/sample/sampleThicknessY_3 25 mm
+
+#Cambia el Espesor del material moderador 3 en Z
+/shield/sample/sampleThicknessZ_3 63.8 mm
+
+
+
+/gps/particle neutron
+
+#/gps/pos/centre 60 0 0 cm
+#/gps/direction -1 0 0
+#/gps/energy 1 eV
+
+#numero de particulas  
+#/run/beamOn 1000
+#
+
+/gps/pos/centre 0 0 0 cm
+/gps/ang/type iso
+/gps/energy 0.0025 eV
+
+#numero de particulas  
+/run/beamOn 10
+
